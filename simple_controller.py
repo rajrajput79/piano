@@ -2,10 +2,10 @@
 import board
 import neopixel
 
-class SimpleController:
-    DOWN = 144
+class ParentClass:
+     DOWN = 144
 
-    def __init__(self, num_lights, color_on, color_off):
+     def __init__(self, num_lights, color_on, color_off):
         # state of the lights
         self.num_lights = num_lights
         self.color_on = color_on
@@ -20,6 +20,8 @@ class SimpleController:
                                         pixel_order=neopixel.RGB)
         self.pixels.fill((0,0,0))
 
+class SimpleController(ParentClass):
+    pass
 
     def process_event(self, event):
         message, deltatime = event
