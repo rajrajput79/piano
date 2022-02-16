@@ -21,7 +21,6 @@ class ParentClass:
         self.pixels.fill((0,0,0))
 
 class SimpleController(ParentClass):
-    pass
 
     def process_event(self, event):
         message, deltatime = event

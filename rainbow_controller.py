@@ -4,7 +4,6 @@ import neopixel
 from simple_controller import ParentClass
 
 class RainbowController(ParentClass):
-    pass
 
     def process_event(self, event):
         self.color_off = self.color_on
