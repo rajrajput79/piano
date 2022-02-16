@@ -1,9 +1,9 @@
 # libraries for controlling lights
 import board
 import neopixel
-from simple_controller import ParentClass
+from simple_controller import ParentClass1
 
-class RainbowController(ParentClass):
+class RainbowController(ParentClass1):
 
     def process_event(self, event):
         self.color_off = self.color_on
